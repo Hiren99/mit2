@@ -1,0 +1,60 @@
+:root {
+    --primary: #279800;
+    --dark: #000;
+    --white: #fff;
+    --text-color: #4a4a4a;
+}
+@font-face {
+    font-family: 'lexend-deca';
+    src: url('../fonts/LexendDeca-Regular.eot');
+    src: url('../fonts/LexendDeca-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LexendDeca-Regular.woff2') format('woff2'),
+        url('../fonts/LexendDeca-Regular.woff') format('woff'),
+        url('../fonts/LexendDeca-Regular.ttf') format('truetype'),
+        url('../fonts/LexendDeca-Regular.svg#LexendDeca-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* --- chrome scrool bar --- */
+::-webkit-scrollbar {
+    width: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+    background: #9e9e9e;
+    border-radius: 2px;
+    height: 50px;
+}
+body {
+    font-family: "lexend-deca";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+a:hover {
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+a:focus,.button:focus,button:focus {
+    text-decoration: none;
+    outline: none;
+}
+a:focus {
+    text-decoration: none;
+}
+a:focus,a:hover,.portfolio-cat a:hover,.footer -menu li a:hover {
+    text-decoration: none;
+}
+
+/* ============== css ================  */
+
+/* nav bar */
+.ht-heder {background-color: #000;}
+.ht-heder .main-logo {height: 80px;}
+.ht-heder .navbar-nav li .nav-link {margin-left: 15px;font-size: 18px;text-transform: uppercase;color: #fff;}
+.ht-heder .navbar-nav li .nav-link:hover {color: #03baec;}
+
+/* nav bar */
