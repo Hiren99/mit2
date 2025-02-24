@@ -5,6 +5,13 @@
     --text-color: #4a4a4a;
 }
 @font-face {
+    font-family: 'copperplategothicbold';
+    src: url('../fonts/copperplategothicbold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'lexend-deca';
     src: url('../fonts/LexendDeca-Regular.eot');
     src: url('../fonts/LexendDeca-Regular.eot?#iefix') format('embedded-opentype'),
@@ -17,6 +24,7 @@
     font-display: swap;
 }
 /* --- chrome scrool bar --- */
+* {outline: none;}
 ::-webkit-scrollbar {
     width: 8px !important;
 }
@@ -34,13 +42,14 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-a:hover {
+a, a:hover {
     text-decoration: none;
     transition: all 0.5s ease;
 }
-a:focus,.button:focus,button:focus {
+a:focus,.button:focus,button:focus, button:focus {
     text-decoration: none;
     outline: none;
+    box-shadow: none !important;
 }
 a:focus {
     text-decoration: none;
@@ -48,7 +57,48 @@ a:focus {
 a:focus,a:hover,.portfolio-cat a:hover,.footer -menu li a:hover {
     text-decoration: none;
 }
-
+.btn {box-shadow: none;}
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+/* Go to top */
+#return-to-top {
+    position: fixed;
+    border: 2px solid #fff;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    line-height: 39px;
+    display: block;
+    text-decoration: none;
+    display: none;
+    text-align: center;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 9999;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.25);
+    opacity: 0.3;
+}
+#return-to-top:hover {opacity: 1;}
+#return-to-top .top-arrow {
+    top: -3px;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
 /* ============== css ================  */
 
 /* nav bar */
@@ -57,4 +107,46 @@ a:focus,a:hover,.portfolio-cat a:hover,.footer -menu li a:hover {
 .ht-heder .navbar-nav li .nav-link {margin-left: 15px;font-size: 18px;text-transform: uppercase;color: #fff;}
 .ht-heder .navbar-nav li .nav-link:hover {color: #03baec;}
 
-/* nav bar */
+/* header */
+.ht-banner .content {font-family: 'copperplategothicbold';}
+.ht-banner .content .water {
+    color: #03baec;font-size: 35px;
+}
+.ht-banner .content .mold {
+    color: #8bcb02;font-size: 35px;
+}
+.ht-banner .content .fire {
+    color: #f9b300;font-size: 35px;
+}
+.ht-banner .content .water {
+    color: #03baec;
+}
+.ht-banner .content div {
+    color: #03baec;
+    font-size: 50px;
+    text-align: center;
+    margin: 15px 0 0 0;
+    line-height: initial;
+}
+.ht-banner .content div img {
+    position: relative;
+    margin: -15px 15px 0 15px;
+    height: 80px;
+}
+.ht-banner .content div a {
+    color: #03baec;
+    font-size: 50px;
+}
+
+/* faqs */
+.ht-faq_section .accordion-button {
+    background-color: #111;
+    color: var(--white);
+    font-size: 20px;
+}
+.ht-faq_section .accordion-button::after {border-radius: 100px;background-color: var(--white);}
+.ht-faq_section .faqinner .card-body {background-color: #111;border-radius: 0.375rem;}
+.ht-faq_section .faqinner .link-text {display: flex;align-items: center;gap: 1rem;color: var(--white);font-size: 20px;}
+
+/* form */
+.blue-bg {background-color: #03baec;border-radius: 0.375rem;}
