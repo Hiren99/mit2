@@ -270,3 +270,55 @@ ul li, .listing li {position: relative;margin: 6px 0;}
 .footer-second p span a {
     color: #7c7c7c;
 }
+
+/* ht-fort-lauderdale */
+.ht-fort-lauderdale-banner {background-image: url('../images/fort-lauderdale/fort-lauderdale-banner.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;padding: 9rem 0;}
+.ht-fort-lauderdale-banner .content h1 {font-size: 3em;font-weight: 600;}
+.ht-fort-lauderdale-banner .content ul li {color: var(--white);font-size: 20px;}
+.ht-fort-lauderdale-banner .fl-bannerbtn {display: flex;align-items: stretch;gap: 1rem;}
+.ht-fort-lauderdale-banner .fl-bannerbtn .water-service-btn {background-color: #000;color: var(--white);font-size: 18px;padding: 10px 30px;border-radius: 10px;border: 2px solid transparent;}
+.ht-fort-lauderdale-banner .fl-bannerbtn a.water-service-btn:hover {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid #fff;
+}
+.ht-fort-lauderdale-banner .fl-bannerbtn .nonfillbtn {
+    background-color: transparent;
+    color: var(--white);
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid var(--white);
+    display: flex;
+    align-items: center;
+}
+.ht-fort-lauderdale-banner .fl-bannerbtn .nonfillbtn:hover {background-color: var(--dark);color: var(--white);border-color: transparent;}
+.ht-fort-lauderdaleexperts {background-color: #e1f9ff;padding: 4rem 0;}
+.ht-fort-lauderdaleexperts .content .innerbox {
+    text-align: center;margin: 15px 0;
+    border-right: 1px solid #6fe9fe;
+    padding: 0px 51px;
+}
+.ht-fort-lauderdaleexperts .content .col-xl-3:last-child .innerbox{border: 0;}
+.ht-fort-lauderdaleexperts .innerbox h4.texth4 {font-size: 18px;margin: 1.5rem 0 0;font-weight: 500;color: var(--dark);}
+.ht-fort-lauderdaleexperts .innerbox aside {
+    background-color: var(--white);
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0px 2px 17px 5px rgb(0 0 0 / 7%);
+}
+.ht-fort-lauderdaleexperts .innerbox i {color: #03baec;}
+.ht-fort-lauderdalemoreservice {background-color: #f2f2f2;}
+.ht-fort-lauderdalemoreservice .innerbox {
+    text-align: center;
+    border: 1px solid var(--primary);
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 2rem 10px;
+}
+.ht-fort-lauderdalemoreservice .innerbox .texth3 {font-size: 22px;margin-bottom: 0;font-weight: 500;padding-top: 1rem;}
+.ht-countySF {background-color: #f2f2f2;}

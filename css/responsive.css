@@ -1,0 +1,33 @@
+
+@media(min-width:768px) and (max-width:991px) {
+    .ht-heder .main-logo {height: 50px;}
+    .ht-heder .navbar-nav li .nav-link {
+        margin-left: 0;
+        font-size: 15px;
+    }
+    .ht-fort-lauderdaleexperts .content .innerbox {padding: 0;}
+}
+
+@media(max-width: 991px) {
+    .navbar-toggler {border: 0;}
+}
+@media(max-width:767px) {
+    .heading-section h2 {font-size: 1.5em;}
+    .ht-fort-lauderdale-banner, .ht-fort-lauderdaleexperts {padding: 2rem 0;}
+    .ht-fort-lauderdale-banner .content h1 {font-size: 1.5em;}
+}
+
+@media(max-width: 640px) {
+    .ht-heder .main-logo {
+        height: 60px;
+    }
+    .ht-heder .navbar-nav li .nav-link {margin-left: 0;font-size: 16px;padding: 5px 0;}
+    .footer-second p {text-align: center;}
+}
+@media(max-width: 580px) {
+    .ht-fort-lauderdale-banner .fl-bannerbtn {
+        display: inline-grid;
+        justify-items: center;
+        width: 100%;
+    }
+}
