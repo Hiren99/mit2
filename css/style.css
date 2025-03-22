@@ -85,7 +85,7 @@ a:focus,a:hover,.portfolio-cat a:hover,.footer -menu li a:hover {
 ul {padding-left: 0;}
 ul, .listing {list-style-type: none;}
 ul li, .listing li {position: relative;margin: 6px 0;}
-.listing li {padding-left: 1.5rem;}
+.listing li {padding-left: 1.5rem;text-align: left;}
 .listing li::before {
     content: "\e4be";
     font-family: 'Font Awesome 6 Pro';
@@ -139,7 +139,7 @@ ul li, .listing li {position: relative;margin: 6px 0;}
 
 /* nav bar */
 .ht-heder {background-color: #000;}
-.ht-heder .main-logo {height: 80px;}
+.ht-heder .main-logo {height: 95px;}
 .ht-heder .navbar-nav li .nav-link {margin-left: 15px;font-size: 18px;text-transform: uppercase;color: #fff;}
 .ht-heder .navbar-nav li .nav-link:hover {color: #03baec;}
 
@@ -315,10 +315,20 @@ ul li, .listing li {position: relative;margin: 6px 0;}
 .ht-fort-lauderdalemoreservice {background-color: #f2f2f2;}
 .ht-fort-lauderdalemoreservice .innerbox {
     text-align: center;
-    border: 1px solid var(--primary);
-    background-color: var(--white);
+    background-color: var(--dark);
+    color: var(--white);
     border-radius: 10px;
     padding: 2rem 10px;
 }
 .ht-fort-lauderdalemoreservice .innerbox .texth3 {font-size: 22px;margin-bottom: 0;font-weight: 500;padding-top: 1rem;}
+.ht-fort-lauderdalemoreservice .more-btn .btnLink {border: 2px solid var(--white);border-radius: 8px;padding: 16.4px 25px;display: inline-block;color: var(--white);margin-top: 1rem;}
 .ht-countySF {background-color: #f2f2f2;}
+.ht-countySF .map-list ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.ht-countySF .map-list ul li .maplink {color: var(--dark);font-size: 20px;}
+.ht-countySF .map-list ul li .maplink:hover {color: #969da4;}
